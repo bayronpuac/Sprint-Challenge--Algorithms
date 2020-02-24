@@ -96,8 +96,12 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
-        # Fill this out
-        pass
+        # Bubble sort worked with being able to sort the robot' list
+        for i in range(0, len(self._list)):
+            for j in range(0, len(self._list) -1 - i):
+                if self._list[j] > self._list[j + 1]:
+                    self.swap_item
+        return self._list
 
 
 if __name__ == "__main__":
