@@ -100,51 +100,8 @@ class SortingRobot:
         for i in range(0, len(self._list)):
             for j in range(0, len(self._list) -1 - i):
                 if self._list[j] > self._list[j + 1]:
-                    self._list[j], self._list[j+1] = self._list[j +1], self._list[j]
+                    self.swap_item
         return self._list
-        """
-        Sort the robot's list.
-        """
-        # # Fill this out
-        # if(self.light_is_on):
-        #  self.set_light_on()
-
-        # while self.light_is_on():
-
-        #     # turn off the light at the begining everytime
-        #     self.set_light_off()
-
-        #     # check going right until the and
-        #     while self.can_move_right():
-
-        #         # swap
-        #         self.swap_item()
-
-        #         # move right
-        #         self.move_right()
-
-        #         # compare and swap the items
-        #         if self.compare_item() == 1:
-        #             self.swap_item()
-        #             # setting the light
-        #             self.set_light_on()
-
-        #     self.swap_item()
-
-        #     # check going left
-        #     while self.can_move_left():
-        #         # swap items
-        #         self.swap_item()
-
-        #         # move left
-        #         self.move_left()
-
-        #         # compare the items and swap them if its the case
-        #         if self.compare_item() == -1:
-        #             self.swap_item()
-        #             self.set_light_on()
-
-        #     self.swap_item()
 
 
 if __name__ == "__main__":
